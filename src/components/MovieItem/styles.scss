@@ -1,0 +1,54 @@
+.MuiGrid-item {
+    .movie_link {
+        position: relative;
+        display: block;
+        width: 100%;
+        box-shadow: 0px 5px 25px rgba(119, 119, 119, 0.08);
+        margin-bottom: 20px;
+        border-radius: 20px;
+        img {
+            width: 100%;
+            border-radius: 20px;
+            &:hover {
+                opacity: .8;
+            }
+            &.block {
+                display: none;
+            }
+            &.none {
+                display: block;
+            }
+        }
+        .short-mask {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            background: url('../../assets/image/play.png') center no-repeat;
+            background-color: rgba(0,0,0,.5);
+            opacity: 0;
+            transition: 1s;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+    .movie_info {
+        font-size: 13px;
+        line-height: 18px;
+        text-align: left;
+        h5 {
+            font-weight: 600;
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+        .movie_info_block {
+            display: flex;
+            .movie_info_country {
+                margin-left: 5px;
+            }
+        }
+    }
+}

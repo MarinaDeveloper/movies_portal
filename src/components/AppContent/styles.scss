@@ -1,0 +1,28 @@
+.app_container {
+    width: 100%;
+    max-width: 1230px;
+    margin: 150px auto;
+    background-color: #fff;
+    border-radius: 20px;
+
+    main {
+        padding: 40px 40px 0;
+    }
+
+    @media (max-width:1230px) {
+        max-width: 1000px;
+    }
+    @media (max-width:992px) {
+        max-width: 750px;
+    }
+    @media (max-width:900px) {
+        main {
+            padding: 20px 20px 0;
+        }
+    }
+    @media (max-width:767px) {
+        max-width: none;
+        margin: 100px auto;
+        border-radius: 0;
+    }
+}
